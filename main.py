@@ -53,7 +53,7 @@ def get_current_price(stock_code):
 	return (current_price, time)
 
 def compare_value(value1, value2):
-	thres = 0.001
+	thres = 0.0003
 	rate = abs((float(value1) - float(value2))/float(value1))
 	if value1 > value2 and rate > thres:
 		return 1
